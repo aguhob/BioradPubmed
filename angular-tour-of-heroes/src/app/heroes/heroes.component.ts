@@ -20,7 +20,9 @@ export class HeroesComponent implements OnInit {
   // last inserted^. Don't 'replace' anything, and this will work
 
   getHeroes(): void {
-    this.heroes = this.heroService.getHeroes();
+    this.heroService.getHeroes()
+    .subscribe(heroes => this.heroes = heroes);
+    
   }
   // last inserted^
 
