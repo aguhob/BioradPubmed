@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
-import { HEROES } from '../mock-heroes';
+// import { HEROES } from '../mock-heroes';
 
 
 @Component({
@@ -19,21 +19,20 @@ export class HeroesComponent implements OnInit {
   heroes: Hero[];
   // last inserted^. Don't 'replace' anything, and this will work
 
-  getHeroes(): void {
-    this.heroService.getHeroes()
-    .subscribe(heroes => this.heroes = heroes);
-    
-  }
-  // last inserted^
-
   constructor(private heroService: HeroService) { }
 
   ngOnInit() {
     this.getHeroes();
   }
 
+  // last inserted^
 
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
+  }
+  
+  getHeroes(): void {
+    this.heroService.getHeroes()
+      .subscribe(heroes => this.heroes = heroes);
   }
 }
