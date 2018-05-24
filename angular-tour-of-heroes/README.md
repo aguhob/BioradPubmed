@@ -10,6 +10,13 @@ npm install -g @angular/cli
 
 ng new [name of project]
 
+Section 8 is written shittily:
+
+1) $ npm install angular-in-memory-web-api -S
+2) $ ng generate service in-memory-data
+3) Add to app.module.ts:
+import { HttpClientModule } from '@angular/common/http';
+
 # AngularTourOfHeroes
 
 

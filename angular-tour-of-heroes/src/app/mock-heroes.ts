@@ -1,5 +1,9 @@
 import { Hero } from './hero';
 
+// this import statement ensures this HEROES variable, 
+// which holds the Hero array, conforms to the same
+// id / name types referred to in Heroes component TS file.
+
 export const HEROES: Hero[] = [
   { id: 11, name: 'Materials1' },
   { id: 12, name: 'Materials2' },
