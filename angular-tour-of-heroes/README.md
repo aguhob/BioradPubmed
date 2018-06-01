@@ -1,14 +1,15 @@
 TO launch:
 
+$ cd angular-tour-of-heroes
 $ ng serve --host $IP --port $PORT --disable-host-check
 
 TO install stuff:
-npm install -g @angular/cli
-nvm install 9
-npm uninstall -g @angular/cli
-npm install -g @angular/cli
+$ nvm install 9  // to upgrade node
+$ npm install -g @angular/cli
+$ npm i -g npm  // to update
 
-ng new [name of project]
+To create the app shell:
+$ ng new [name of project]
 
 Section 8 is written shittily:
 

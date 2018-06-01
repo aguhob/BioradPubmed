@@ -25,6 +25,7 @@ export class HeroService {
   /** GET heroes from the server */
   getHeroes (): Observable<Hero[]> {
     return this.http.get<Hero[]>(this.heroesUrl)
+    
   }
 
   getHero(id: number): Observable<Hero> {
